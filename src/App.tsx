@@ -54,7 +54,7 @@ function App() {
     const newParts = [];
 
     // go through parts backwards
-    for (let i = parts.length - 1; i > 0; i--) {
+    for (let i = parts.length - 1; i >= 0; i--) {
       if (["*", "/", "+"].includes(parts[i]) && isOperator(parts[i - 1])) {
         newParts.unshift(parts[i]);
         let j = 0;
